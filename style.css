@@ -92,7 +92,7 @@ label[for="new-task"] {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.add-block__input {
   width: 318px;
 }
 .button_add:hover {
