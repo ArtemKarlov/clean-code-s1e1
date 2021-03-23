@@ -31,7 +31,7 @@ var createNewTaskElement=function(taskString){
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-
+    
     listItem.classList.add("todo__item");
 
     label.innerText=taskString;
@@ -56,10 +56,15 @@ var createNewTaskElement=function(taskString){
 
     //and appending.
     listItem.appendChild(checkBox);
+    listItem.appendChild(document.createTextNode("\n"));
     listItem.appendChild(label);
+    listItem.appendChild(document.createTextNode("\n"));
     listItem.appendChild(editInput);
+    listItem.appendChild(document.createTextNode("\n"));
     listItem.appendChild(editButton);
+    listItem.appendChild(document.createTextNode("\n"));
     listItem.appendChild(deleteButton);
+
     return listItem;
 }
 
