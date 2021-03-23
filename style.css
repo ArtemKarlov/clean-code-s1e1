@@ -28,9 +28,8 @@ body {
 
 }
 .main {
-  display: block;
+  margin: 0 auto;
   width: 400px;
-  margin: 0 auto 0;
 }
 .main__block {
     margin-top: 30px;
