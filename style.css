@@ -108,7 +108,7 @@ li > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo__checkbox {
   margin: 0 10px;
 }
 .todo__name {
