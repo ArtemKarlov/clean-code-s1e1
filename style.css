@@ -62,7 +62,8 @@ input,
 }
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="new-task"],
+.heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -88,9 +89,8 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
+.add-block__title {
+  margin-bottom: 20px;
 }
 .add-block__input {
   width: 318px;
