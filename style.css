@@ -10,10 +10,10 @@ body {
 .hero {
   width: 500px;
   margin: 0 auto;
-  display: block;
   text-align: right;
 }
 .hero__img {
+  display: block;
   width: 100%;
 }
 .hero__link {
