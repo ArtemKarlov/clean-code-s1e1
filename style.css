@@ -138,7 +138,7 @@ li > .delete:hover,
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .todo__name {
   text-decoration: line-through;
   color: #888;
 }
