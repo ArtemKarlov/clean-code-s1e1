@@ -150,6 +150,6 @@ li > .delete:hover,
   width: 224px;
 }
 
-ul .editMode label {
+.editMode .todo__name {
   display: none;
 }
