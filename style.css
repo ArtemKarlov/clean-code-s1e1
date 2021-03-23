@@ -95,8 +95,7 @@ label[for="new-task"] {
 #new-task {
   width: 318px;
 }
-/*?: style for add item button*/
-p > button:hover {
+.button_add:hover {
   color: #0FC57C;
 }
 
