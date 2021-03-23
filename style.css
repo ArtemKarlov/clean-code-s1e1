@@ -137,8 +137,6 @@ body {
   display: none;
 }
 
-/* TODO: del "li > .delete:hover," */
-li > .delete:hover,
 .button_delete:hover {
   color: #CF2323;
 }
