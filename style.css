@@ -141,13 +141,21 @@ body {
   color: #CF2323;
 }
 
-.button_delete img {
+.button__img {
+  display: block;
+  width: 2em;
   height: 2em;
+  padding: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.button__img_remove {
+  background-image: url(./remove.svg);
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-
-.button_delete:hover img {
+.button:hover .button__img_remove {
   transform: rotateZ(0);
 }
 
