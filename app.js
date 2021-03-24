@@ -47,7 +47,6 @@ var createNewTaskElement=function(taskString){
     editButton.dataset.button = "edit";
     editButton.classList.add("button");
 
-    deleteButton.innerText="Delete";
     deleteButton.dataset.button = "delete";
     deleteButton.classList.add("button", "button_delete");
     deleteButtonImg.classList.add("button__img", "button__img_remove");
