@@ -44,10 +44,10 @@ var createNewTaskElement=function(taskString){
     editInput.classList.add("todo__input");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.dataset.button = "edit";
+    editButton.dataset.button = "edit"; //use data-attribute to select button element
     editButton.classList.add("button");
 
-    deleteButton.dataset.button = "delete";
+    deleteButton.dataset.button = "delete"; //use data-attribute to select button element
     deleteButton.classList.add("button", "button_delete");
     deleteButtonImg.classList.add("button__img", "button__img_remove");
     deleteButton.appendChild(deleteButtonImg);
@@ -92,10 +92,10 @@ var editTask=function(){
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector('button[data-button="edit"]');
     var containsClass=listItem.classList.contains("todo__item_edit");
-    //If class of the parent is .editmode
+    //If class of the parent is .todo__item_edit
     if(containsClass){
 
-        //switch to .editmode
+        //switch to .todo__item_edit
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -104,7 +104,7 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .editmode on the parent.
+    //toggle .todo__item_edit on the parent.
     listItem.classList.toggle("todo__item_edit");
 };
 
@@ -161,6 +161,7 @@ addButton.addEventListener("click",ajaxRequest);
 var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
+//select buttons by data-attributes
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector('button[data-button="edit"]');
     var deleteButton=taskListItem.querySelector('button[data-button="delete"]');
