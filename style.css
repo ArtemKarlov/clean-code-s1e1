@@ -41,11 +41,6 @@ body {
   margin-top: 30px;
 }
 
-.todo__name {
-  width: 56%;
-  display: inline-block;
-}
-
 .button {
   background: none;
   border: 0px;
