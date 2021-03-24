@@ -85,6 +85,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #888;
   outline: none;
+  flex-grow: 1;
 }
 
 .add-block__input:focus,
@@ -95,6 +96,10 @@ body {
 /* New Task */
 .add-block__title {
   margin-bottom: 20px;
+}
+
+.add-block__wrapper {
+  display: flex;
 }
 
 .add-block__input {
@@ -112,6 +117,9 @@ body {
 }
 
 .todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -131,6 +139,7 @@ body {
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
+  flex-grow: 1;
 }
 
 .todo__input {
