@@ -126,10 +126,6 @@ body {
   list-style: none;
 }
 
-.todo__item > * {
-  vertical-align: middle;
-}
-
 .todo__checkbox {
   margin: 0 10px;
 }
