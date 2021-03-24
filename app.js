@@ -30,7 +30,7 @@ var createNewTaskElement=function(taskString){
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
+    var deleteButtonImg=document.createElement("span");//delete button image
     
     listItem.classList.add("todo__item");
 
@@ -50,7 +50,7 @@ var createNewTaskElement=function(taskString){
     deleteButton.innerText="Delete";
     deleteButton.dataset.button = "delete";
     deleteButton.classList.add("button", "button_delete");
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add("button__img", "button__img_remove");
     deleteButton.appendChild(deleteButtonImg);
 
 
