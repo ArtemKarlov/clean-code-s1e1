@@ -158,11 +158,11 @@ body {
 }
 
 /* Edit Task */
-.editMode .todo__input {
+.todo__item_edit .todo__input {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .todo__name {
+.todo__item_edit .todo__name {
   display: none;
 }
