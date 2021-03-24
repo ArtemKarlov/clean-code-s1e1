@@ -41,7 +41,7 @@ body {
   margin-top: 30px;
 }
 
-.task {
+.todo__name {
   width: 56%;
   display: inline-block;
 }
