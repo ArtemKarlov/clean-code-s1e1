@@ -152,7 +152,7 @@ body {
 }
 
 /* Completed */
-#completed-tasks .todo__name {
+.todo__list_completed .todo__name {
   text-decoration: line-through;
   color: #888;
 }
